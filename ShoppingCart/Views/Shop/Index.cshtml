@@ -37,11 +37,13 @@
                 @Html.DisplayFor(modelItem => item.Price)
             </td>
             <td>
-                @Html.ActionLink("Edit", "Edit", new { /* id=item.PrimaryKey */ }) |
-                @Html.ActionLink("Details", "Details", new { /* id=item.PrimaryKey */ }) |
-                @Html.ActionLink("Delete", "Delete", new { /* id=item.PrimaryKey */ })
+                @Html.ActionLink("Add to cart", "AddToCart", new { code =item.Code }) 
             </td>
         </tr>
 }
     </tbody>
 </table>
+
+<h3> Total price of cart items: € @ViewBag.TotalPrice</h3>
+
+<p>@ViewBag.LastAdded</p>
