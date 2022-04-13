@@ -49,5 +49,11 @@ namespace ShoppingCart.Controllers
                 return View();
             }
         }
+
+        public ActionResult GoToHome()
+        {
+            return RedirectToAction("Index", "Home");
+        }
+        
     }
 }

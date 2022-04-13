@@ -18,6 +18,13 @@ namespace ShoppingCart.Controllers
             return View();
         }
 
+
+        public ActionResult GoToShop()
+        {
+            return RedirectToAction("Index", "Shop");
+        }
+
+
         public IActionResult Privacy()
         {
             return View();
