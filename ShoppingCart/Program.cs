@@ -4,7 +4,7 @@ using ShoppingCart.Data;
 var builder = WebApplication.CreateBuilder(args);
 
 builder.Services.AddDbContext<ItemsContext>(options =>
-    options.UseSqlServer(builder.Configuration.GetConnectionString("ItemsOtherContext")));
+    options.UseSqlServer(builder.Configuration.GetConnectionString("ItemsAzureContext")));
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
